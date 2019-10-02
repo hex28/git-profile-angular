@@ -1,0 +1,36 @@
+<div *ngFor="let item of data; let i=index" class="w-100 mt-12 paper border-radius p-0">
+    <div *ngIf="i<6 && item.language !== null" class="p-16">
+        <div>
+            <span class="font-bold">Repo:</span> 
+            {{item.name}}
+        </div>
+        <div class="mt-4">
+            <span class="font-bold">Link: </span><a href="{{item.html_url}}" target="_blank">{{item.html_url}}</a>
+        </div>
+        <div *ngIf="item.description" class="mt-4">
+            <span class="font-bold">Description:</span> {{item.description}}
+        </div>
+        <div *ngIf="item.language" class="mt-4">
+            <span class="font-bold">Language:</span> {{item.language}}
+        </div>
+        <div *ngIf="!item.viewMore" class="mt-4">
+            <span class="pointer link" (click)="viewMore(i)">View More</span>
+        </div>
+        <div *ngIf="item.viewMore && !item.dataLoaded" class="mt-4">
+            ...
+        </div>
+        <div *ngIf="item.dataLoaded" class="mt-4">
+            <div>
+                <span class="font-bold m-0">Number of Commits:</span> {{item.commit_length}}
+            </div>
+            <div class="mt-4">
+                <p class="font-bold m-0">Repo by Bytes</p>
+                <div *ngFor="let lang of item.languageBreakdown | keyvalue">
+                    <div>
+                        {{lang.key}} : {{lang.value}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

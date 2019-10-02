@@ -1,0 +1,9 @@
+<div class="w-100 md:w-75 lg:w-50 mx-auto" style="padding-top: 20rem;">
+    <h1 class="text-center">Seach for a Github Profile</h1>
+    <div class="flex box-shadow radius-8 overflow-hidden" tabindex="1">
+            <input [(ngModel)]="username" class="w-100 mr-2 p-16 border-none input-outline-none" type="text" style="font-size: 16px;"/>
+            <button type="submit" class="border-none pointer font-bold" routerLink="profile/{{username}}" style="font-size: 24px; padding: 0 12px;">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+    </div>
+</div>

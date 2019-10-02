@@ -1,0 +1,23 @@
+<div class="paper">
+    <div class="text-center">
+        <div>
+            <img class="avatar" src="{{user.avatar_url}}" />
+        </div>
+        <div>
+            <h1>
+                <a href="https://www.github.com/{{user.login}}" target="_blank">
+                    {{user.login}}
+                    <span *ngIf="user.company">
+                        @{{user.company}}
+                    </span>
+                </a>
+            </h1>
+        </div>
+        <div *ngIf="user.email">
+            Email: {{user.email}}
+        </div>
+        <div *ngIf="user.bio">
+            {{user.bio}}
+        </div>
+    </div>
+</div>
