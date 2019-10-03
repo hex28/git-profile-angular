@@ -2,6 +2,11 @@
 
 This was a mini project built with Angular. It allows you to search for a user and view their git profile along with a few other aggregated data on the user.
 
+## Demo
+
+View the demo here [https://www.andy-huynh.com/demos/angular/git](https://www.andy-huynh.com/demos/angular/git).
+Alternatively you can go straight to the page by typing into the browser https://www.andy-huynh.com/demos/angular/git/profile/{{github_username}}
+
 ## API
 
 This project utilizes the github API [https://developer.github.com/v3/](https://developer.github.com/v3/).
