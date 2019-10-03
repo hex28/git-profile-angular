@@ -5,7 +5,8 @@ This was a mini project built with Angular. It allows you to search for a user a
 ## Demo
 
 View the demo here [https://www.andy-huynh.com/demos/angular/git](https://www.andy-huynh.com/demos/angular/git).<br/>
-Alternatively you can go straight to the page by typing into the browser https://www.andy-huynh.com/demos/angular/git/profile/{{github_username}}
+Alternatively you can go straight to the page by typing into the browser <br/>
+https://www.andy-huynh.com/demos/angular/git/profile/{{github_username}}
 
 ## API
 
